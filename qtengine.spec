@@ -8,6 +8,7 @@ URL:            https://github.com/kosslan/qtengine
 Source0:        %{url}/archive/refs/tags/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildRequires:  cmake
+BuildRequires:  ninja-build
 BuildRequires:  gcc-c++
 BuildRequires:  extra-cmake-modules
 
