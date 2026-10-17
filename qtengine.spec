@@ -7,19 +7,19 @@ License:        MIT
 URL:            https://github.com/kosslan/qtengine
 Source0:        %{url}/archive/refs/tags/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
-BuildRequires:  cmake
-BuildRequires:  extra-cmake-modules
-BuildRequires:  kf6-kiconthemes-devel
-BuildRequires:  kf6-kconfig-devel
-BuildRequires:  kf6-kcolorscheme-devel
-BuildRequires:  qt6-qtbase-devel
-BuildRequires:  qt6-qtbase-private-devel
-BuildRequires:  qt5-qtbase-devel
-BuildRequires:  qt5-qtbase-private-devel
-BuildRequires:  qt5-qtquickcontrols2-devel
-BuildRequires:  kf5-kconfig-devel
-BuildRequires:  kf5-kconfigwidgets-devel
-BuildRequires:  kf5-kiconthemes-devel
+# BuildRequires:  cmake
+# BuildRequires:  extra-cmake-modules
+# BuildRequires:  kf6-kiconthemes-devel
+# BuildRequires:  kf6-kconfig-devel
+# BuildRequires:  kf6-kcolorscheme-devel
+# BuildRequires:  qt6-qtbase-devel
+# BuildRequires:  qt6-qtbase-private-devel
+# BuildRequires:  qt5-qtbase-devel
+# BuildRequires:  qt5-qtbase-private-devel
+# BuildRequires:  qt5-qtquickcontrols2-devel
+# BuildRequires:  kf5-kconfig-devel
+# BuildRequires:  kf5-kconfigwidgets-devel
+# BuildRequires:  kf5-kiconthemes-devel
 Requires:       bash
 
 %description
