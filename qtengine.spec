@@ -50,10 +50,9 @@ for qt in qt5 qt6; do
 done
 
 %files
-%{_prefix}/lib/qt6/plugins/platformthemes/libqt6engine-plugin.so
-%{_prefix}/lib/qt6/plugins/styles/libqt6engine-style.so
-%{_libdir}/libqt6engine-common.so
-%{_prefix}/lib/qt5/plugins/platformthemes/libqt5engine-plugin.so
-%{_prefix}/lib/qt5/plugins/styles/libqt5engine-style.so
-%{_libdir}/libqt5engine-common.so
+%{_libdir}/libqt*engine-common.so*
+%{_libdir}/qt6/plugins/platformthemes/libqt6engine-plugin.so
+%{_libdir}/qt6/plugins/styles/libqt6engine-style.so
+%{_libdir}/qt5/plugins/platformthemes/libqt5engine-plugin.so
+%{_libdir}/qt5/plugins/styles/libqt5engine-style.so
 %license LICENSE
