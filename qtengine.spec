@@ -1,5 +1,3 @@
-# https://docs.google.com/document/d/1I4NJlFwT7iH9Zw-qKS_HBG5cqmMj3UpzS65GQ2tCwNs/edit?tab=t.0
-
 Name:           qtengine
 Version:        0.2.2
 Release:        1%{?dist}
@@ -42,6 +40,14 @@ Requires:       bash
 
 %install
 %cmake_install
+# Upstream hardcodes /usr/lib/qt{5,6}/plugins; Fedora's Qt only searches
+# /usr/lib64/qt{5,6}/plugins, so move the plugins there.
+for qt in qt5 qt6; do
+    if [ -d %{buildroot}%{_prefix}/lib/$qt ]; then
+        mkdir -p %{buildroot}%{_libdir}
+        mv %{buildroot}%{_prefix}/lib/$qt %{buildroot}%{_libdir}/$qt
+    fi
+done
 
 %files
 %{_prefix}/lib/qt6/plugins/platformthemes/libqt6engine-plugin.so
