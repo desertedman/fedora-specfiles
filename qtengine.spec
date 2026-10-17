@@ -1,3 +1,5 @@
+# https://docs.google.com/document/d/1I4NJlFwT7iH9Zw-qKS_HBG5cqmMj3UpzS65GQ2tCwNs/edit?tab=t.0
+
 Name:           qtengine
 Version:        0.2.2
 Release:        1%{?dist}
