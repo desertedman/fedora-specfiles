@@ -35,7 +35,12 @@ BuildRequires:  kf6-kiconthemes-devel
 %autosetup
 
 %build
-%cmake -G Ninja -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_SKIP_INSTALL_RPATH=ON
+%cmake \
+    -G Ninja \
+    -DCMAKE_BUILD_TYPE:STRING=Release \
+    -DCMAKE_SKIP_INSTALL_RPATH=ON
+    -DCMAKE_INSTALL_PREFIX=%{_prefix} \
+    -DCMAKE_INSTALL_LIBDIR=%{_lib}
 %cmake_build
 
 %install
