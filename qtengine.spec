@@ -35,7 +35,7 @@ Requires:       bash
 %autosetup
 
 %build
-%cmake -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_SKIP_INSTALL_RPATH=ON
+%cmake -G Ninja -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_SKIP_INSTALL_RPATH=ON
 %cmake_build
 
 %install
